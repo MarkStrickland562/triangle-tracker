@@ -5,46 +5,27 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Vote!</title>
+    <title>Triangle Tracker</title>
   </head>
   <body>
-    <h1>Vote!</h1>
+    <h1>Triangle Tracker</h1>
     <div class="container">
-      <form id="survey">
-        <div class="radio">
-          <label>
-            <input type="radio" name="age" value="over18" checked>
-            Yes, I am over the legal voting age!
-          </label>
+      <form id="dimensions">
+        <div class="form-group">
+          <label for="side1">Side 1:</label>
+          <input id="side1" class="form-control" type="text">
         </div>
-       <div class="radio">
-         <label>
-           <input type="radio" name="age" value="under18">
-           No, I am under the legal voting age.
-         </label>
-       </div>
-       <button type="submit" class="btn submit">Submit!</button>
+        <div class="form-group">
+          <label for="side2">Side 2:</label>
+          <input id="side2" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side3">Side 3:</label>
+          <input id="side3" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
-      <div id="over18">
-        RESOURCES FOR A LEGAL VOTER
-        <p>
-          <a href="https://www.rockthevote.org/"> GET RESOURCES ON VOTING RIGHTS </a>
-        </p>
-        <p>
-          <a href="https://www.vote.org/"> REGISTER TO VOTE </a>
-        </p>
-        <p>
-          <a href="https://www.kingcounty.gov/depts/elections/how-to-vote/ballots/returning-my-ballot/accessible-voting-centers.aspx"> KING COUNTY VOTING LOCATIONS </a>
-        </p>
-      </div>
-      <div id="under18">
-        RESOURCES FOR MINORS TO LEARN MORE ABOUT VOTING
-        <p>
-          <a href="https://www.sos.wa.gov/elections/voter-eligibility.aspx"> LEARN MORE ABOUT VOTING ELIGIBILITY </a>
-        </p>
-        <p>
-          <a href="https://www.usa.gov/voting"> LEARN MORE ABOUT THE VOTING PROCESS </a>
-        </p>
+      <div id="output">
       </div>
     </div>
   </body>
