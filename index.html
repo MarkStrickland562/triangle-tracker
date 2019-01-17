@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vote!</title>
+  </head>
+  <body>
+    <h1>Vote!</h1>
+    <div class="container">
+      <form id="survey">
+        <div class="radio">
+          <label>
+            <input type="radio" name="age" value="over18" checked>
+            Yes, I am over the legal voting age!
+          </label>
+        </div>
+       <div class="radio">
+         <label>
+           <input type="radio" name="age" value="under18">
+           No, I am under the legal voting age.
+         </label>
+       </div>
+       <button type="submit" class="btn submit">Submit!</button>
+      </form>
+      <div id="over18">
+        RESOURCES FOR A LEGAL VOTER
+        <p>
+          <a href="https://www.rockthevote.org/"> GET RESOURCES ON VOTING RIGHTS </a>
+        </p>
+        <p>
+          <a href="https://www.vote.org/"> REGISTER TO VOTE </a>
+        </p>
+        <p>
+          <a href="https://www.kingcounty.gov/depts/elections/how-to-vote/ballots/returning-my-ballot/accessible-voting-centers.aspx"> KING COUNTY VOTING LOCATIONS </a>
+        </p>
+      </div>
+      <div id="under18">
+        RESOURCES FOR MINORS TO LEARN MORE ABOUT VOTING
+        <p>
+          <a href="https://www.sos.wa.gov/elections/voter-eligibility.aspx"> LEARN MORE ABOUT VOTING ELIGIBILITY </a>
+        </p>
+        <p>
+          <a href="https://www.usa.gov/voting"> LEARN MORE ABOUT THE VOTING PROCESS </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
